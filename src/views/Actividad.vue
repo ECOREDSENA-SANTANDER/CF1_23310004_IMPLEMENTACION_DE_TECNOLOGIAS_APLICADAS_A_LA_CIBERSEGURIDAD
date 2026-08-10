@@ -19,10 +19,10 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Selección de tecnologías para la protección y seguridad digital',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> Evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b> Objetivo:</b> verificar la comprensión de los activos de información, la infraestructura de <i>hardware</i> y <i>software</i>, la seguridad perimetral, la protección de sistemas operativos, el modelo de seguridad y privacidad, las herramientas de análisis, los modelos de control de acceso y los mecanismos criptográficos.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
@@ -30,477 +30,718 @@ export default {
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            '¿Qué se entiende por activo de información dentro de una organización?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
               texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+                'Un elemento que genera, procesa, almacena, transmite o respalda información valiosa.',
               esCorrecta: true,
             },
             {
+              id: 'b',
+              texto: 'Únicamente un computador conectado a internet.',
+              esCorrecta: false,
+            },
+            {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+              texto: 'Solo los documentos impresos almacenados en una oficina.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+              texto:
+                'Una herramienta destinada exclusivamente al mantenimiento físico de equipos.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con activo de información y de su alcance organizacional.',
           mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con el concepto y las características de los activos de información.',
         },
+
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Cuál de los siguientes elementos corresponde a un activo primario?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'Un sistema de climatización del centro de datos.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Auto</em>',
+              texto: 'Un <i>switch</i> utilizado para conectar equipos.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Text</em>',
+              texto:
+                'Una base de datos con registros académicos y datos personales.',
               esCorrecta: true,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
+              texto: 'Una fuente de alimentación ininterrumpida.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con los activos primarios y su relación directa con los procesos esenciales de la organización.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con la clasificación de activos primarios y activos de soporte.',
         },
+
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
+          texto:
+            '¿Qué información debe incluir un inventario adecuado de activos?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Para borrar conexiones.',
+              texto: 'Solo el precio de compra y la marca del equipo.',
               esCorrecta: false,
             },
             {
               id: 'b',
               texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
-              esCorrecta: false,
+                'Nombre, propietario, custodio, ubicación, clasificación, dependencias y requisitos de protección.',
+              esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Para agregar nuevas capas.',
+              texto: 'Únicamente el nombre del usuario que utiliza el activo.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
-              esCorrecta: true,
+              texto: 'Solo la fecha en que se instaló el recurso tecnológico.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con los datos necesarios para identificar, inventariar y clasificar activos.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con la identificación, el inventario y la clasificación de activos.',
         },
+
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué dimensiones se emplean principalmente para valorar un activo de información?',
+          imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Text</em>',
+              texto: 'Velocidad, tamaño y color.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Layer</em>',
+              texto: 'Marca, antigüedad y ubicación.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Board</em>',
-              esCorrecta: true,
+              texto: 'Precio, fabricante y garantía.',
+              esCorrecta: false,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
-              esCorrecta: false,
+              texto: 'Confidencialidad, integridad y disponibilidad.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con las dimensiones fundamentales utilizadas para valorar los activos de información.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con la valoración de activos y los principios de confidencialidad, integridad y disponibilidad.',
         },
+
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto: '¿Cuál es el propósito principal del modelado de amenazas?',
+          imagen: '@/assets/actividad/imagen05.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
               texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
+                'Eliminar automáticamente todas las vulnerabilidades de una organización.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto:
+                'Identificar escenarios que pueden afectar un activo, sus rutas de ataque, consecuencias y controles.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
+              texto:
+                'Reemplazar el inventario de <i>hardware</i> y <i>software</i>.',
               esCorrecta: false,
             },
             {
               id: 'd',
               texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+                'Asignar el mismo nivel de protección a todos los activos.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con el modelado de amenazas como apoyo para priorizar decisiones de seguridad.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con el modelado de amenazas aplicado a los activos.',
         },
+
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué elementos conforman la infraestructura tecnológica de una organización?',
+          imagen: '@/assets/actividad/imagen6.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Borrar componentes.',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
+              texto:
+                'Componentes físicos y lógicos como servidores, redes, sistemas operativos, aplicaciones y bases de datos.',
               esCorrecta: true,
             },
             {
+              id: 'b',
+              texto: 'Solo los documentos administrativos impresos.',
+              esCorrecta: false,
+            },
+            {
               id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
+              texto: 'Únicamente los servicios de correo electrónico.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Seleccionar y editar capas.',
+              texto: 'Exclusivamente los dispositivos móviles de los usuarios.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con los componentes de <i>hardware</i> y <i>software</i> que integran una infraestructura tecnológica.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con la infraestructura de <i>hardware</i> y <i>software</i>.',
         },
+
         {
           id: 7,
-          texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto: '¿Qué beneficio aporta la segmentación de redes?',
+          imagen: '@/assets/actividad/imagen7.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
+              texto:
+                'Permitir que todos los dispositivos se comuniquen sin restricciones.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
-              esCorrecta: true,
+              texto:
+                'Eliminar la necesidad de controlar el tráfico entre áreas.',
+              esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
-              esCorrecta: false,
+              texto:
+                'Separar redes según funciones y riesgos, limitando comunicaciones no autorizadas.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
+              texto: 'Concentrar todos los servicios en una única red plana.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con la segmentación como medida para limitar la exposición y el movimiento lateral.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con la interconexión, la segmentación y las dependencias tecnológicas.',
         },
+
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué debe analizarse al seleccionar una solución con licenciamiento?',
+          imagen: '@/assets/actividad/imagen8.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Solo el diseño gráfico de la consola de administración.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Únicamente el precio inicial del producto.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'El nombre comercial del fabricante sin revisar sus condiciones.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
+              texto:
+                'Las funciones disponibles, las actualizaciones, el soporte, la vigencia y el costo durante el ciclo de vida.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con los factores de licenciamiento, soporte y ciclo de vida que influyen en la selección tecnológica.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con licenciamiento, soporte, actualizaciones y obsolescencia.',
         },
+
         {
           id: 9,
           texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Qué significa aplicar el principio de denegación por defecto?',
+          imagen: '@/assets/actividad/imagen9.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto:
+                'Permitir todo el tráfico mientras no se detecte un incidente.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto:
+                'Bloquear una comunicación cuando no existe una regla explícita que la autorice.',
               esCorrecta: true,
             },
+            {
+              id: 'c',
+              texto: 'Eliminar todas las reglas del <i>firewall</i>.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Confiar automáticamente en cualquier dispositivo de la red interna.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con el principio de denegación por defecto en la seguridad perimetral.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con los principios básicos de seguridad perimetral y la definición de reglas de acceso.',
         },
+
         {
           id: 10,
-          texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+          texto: '¿Qué caracteriza a un <i>firewall</i> con estado?',
+          imagen: '@/assets/actividad/imagen10.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto:
+                'Evalúa los paquetes sin considerar las conexiones anteriores.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Solo controla el acceso físico al centro de datos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Mantiene información de las conexiones y reconoce si un paquete pertenece a una sesión autorizada.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Funciona únicamente como sistema de copias de seguridad.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con la función de seguimiento de conexiones de un <i>firewall</i> con estado.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con <i>firewalls</i> y arquitecturas de filtrado.',
         },
         {
           id: 11,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Qué elementos conforman la infraestructura tecnológica de una organización?',
+          imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: false,
+              texto:
+                'Componentes físicos y lógicos como servidores, redes, sistemas operativos, aplicaciones y bases de datos.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
-              esCorrecta: true,
+              texto: 'Solo los documentos administrativos impresos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Únicamente los servicios de correo electrónico.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Exclusivamente los dispositivos móviles de los usuarios.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con los componentes de <i>hardware</i> y <i>software</i> que integran una infraestructura tecnológica.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con la infraestructura de <i>hardware</i> y <i>software</i>.',
         },
+
         {
           id: 12,
-          texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
-          imagen: '@/assets/actividad/imagen3.png',
+          texto: '¿Qué beneficio aporta la segmentación de redes?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto:
+                'Permitir que todos los dispositivos se comuniquen sin restricciones.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto:
+                'Eliminar la necesidad de controlar el tráfico entre áreas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Separar redes según funciones y riesgos, limitando comunicaciones no autorizadas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Concentrar todos los servicios en una única red plana.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con la segmentación como medida para limitar la exposición y el movimiento lateral.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con la interconexión, la segmentación y las dependencias tecnológicas.',
         },
+
         {
           id: 13,
           texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Qué debe analizarse al seleccionar una solución con licenciamiento?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Solo el diseño gráfico de la consola de administración.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Únicamente el precio inicial del producto.',
               esCorrecta: false,
             },
+            {
+              id: 'c',
+              texto:
+                'El nombre comercial del fabricante sin revisar sus condiciones.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Las funciones disponibles, las actualizaciones, el soporte, la vigencia y el costo durante el ciclo de vida.',
+              esCorrecta: true,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con los factores de licenciamiento, soporte y ciclo de vida que influyen en la selección tecnológica.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con licenciamiento, soporte, actualizaciones y obsolescencia.',
         },
+
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
+            '¿Qué significa aplicar el principio de denegación por defecto?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto:
+                'Permitir todo el tráfico mientras no se detecte un incidente.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto:
+                'Bloquear una comunicación cuando no existe una regla explícita que la autorice.',
               esCorrecta: true,
             },
+            {
+              id: 'c',
+              texto: 'Eliminar todas las reglas del <i>firewall</i>.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Confiar automáticamente en cualquier dispositivo de la red interna.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con el principio de denegación por defecto en la seguridad perimetral.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con los principios básicos de seguridad perimetral y la definición de reglas de acceso.',
         },
+
         {
           id: 15,
-          texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+          texto: '¿Qué caracteriza a un <i>firewall</i> con estado?',
+          imagen: '@/assets/actividad/imagen05.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto:
+                'Evalúa los paquetes sin considerar las conexiones anteriores.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Solo controla el acceso físico al centro de datos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Mantiene información de las conexiones y reconoce si un paquete pertenece a una sesión autorizada.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Funciona únicamente como sistema de copias de seguridad.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con la función de seguimiento de conexiones de un <i>firewall</i> con estado.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con <i>firewalls</i> y arquitecturas de filtrado.',
+        },
+
+        {
+          id: 16,
+          texto:
+            '¿Qué función cumple un <i>proxy</i> dentro de una arquitectura de seguridad?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Actuar como intermediario entre el cliente y el servidor, permitiendo controlar y registrar las comunicaciones.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Reemplazar todos los mecanismos de autenticación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Eliminar la necesidad de utilizar <i>firewall</i>.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Garantizar que ningún usuario pueda acceder a internet.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con el funcionamiento del <i>proxy</i> como intermediario de las comunicaciones.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con <i>proxy</i>, filtrado y control de las comunicaciones.',
+        },
+
+        {
+          id: 17,
+          texto: '¿Cuál es una característica de una VPN?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Permite establecer comunicaciones protegidas mediante canales cifrados.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Desactiva automáticamente todos los controles de seguridad.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Permite acceder a cualquier recurso sin autenticación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Sustituye completamente la necesidad de segmentar la red.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con las redes privadas virtuales y la protección de las comunicaciones.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con VPN y mecanismos de protección de las comunicaciones.',
+        },
+
+        {
+          id: 18,
+          texto: '¿Cuál es la función principal de un sistema IDS?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Detectar actividades sospechosas o posibles intrusiones y generar alertas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Eliminar automáticamente todos los archivos del sistema.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Reemplazar el sistema operativo de los equipos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Impedir cualquier comunicación entre dispositivos.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con la detección de intrusiones y la generación de alertas de seguridad.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con IDS, detección de eventos y monitoreo de seguridad.',
+        },
+
+        {
+          id: 19,
+          texto: '¿Cuál es la diferencia principal entre IDS e IPS?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'El IDS detecta y alerta, mientras el IPS puede detectar y bloquear actividades maliciosas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'El IDS solo funciona en equipos móviles y el IPS en servidores.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Ambos sistemas tienen exactamente la misma función.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El IPS únicamente registra eventos sin intervenir.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con las funciones de IDS e IPS dentro de una arquitectura de seguridad.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con IDS, IPS, detección y prevención de intrusiones.',
+        },
+
+        {
+          id: 20,
+          texto:
+            '¿Por qué es importante establecer reglas de seguridad en el perímetro de red?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Porque permiten controlar el tráfico autorizado y reducir la exposición ante amenazas externas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Porque eliminan completamente la posibilidad de sufrir incidentes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Porque permiten que cualquier dispositivo acceda libremente a la red.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Porque sustituyen todos los controles de seguridad internos.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Se evidencia un adecuado dominio de los conceptos relacionados con el control del tráfico y la protección de la seguridad perimetral.',
+          mensaje_incorrecto:
+            'Se recomienda revisar nuevamente los contenidos del componente formativo relacionados con seguridad perimetral, control de tráfico y protección frente a amenazas externas.',
         },
       ],
       mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
       mensaje_final_reprobado:
         'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
-    },
-    parrafo: {
-      tema: 'Comprendiendo el diseño de presupuestos y estrategias de ahorro',
-      titulo: 'Completar frases',
-      introduccion:
-        '<b> Objetivo:</b> identificar conceptos clave relacionados con el presupuesto personal, la cultura del ahorro y la planificación financiera.',
-      instruccion:
-        'Complete correctamente los enunciados con la palabra que falta según los contenidos estudiados en el componente formativo.',
-      imagen: '@/assets/actividad/imagen1.png',
-      barajarPreguntas: true,
-      textos: [
-        {
-          id: 1,
-          texto:
-            'El [respuesta] personal es una herramienta que permite proyectar ingresos y egresos para mantener la estabilidad económica.',
-          respuesta: 'presupuesto',
-        },
-        {
-          id: 2,
-          texto:
-            'La constancia en el cumplimiento del presupuesto refleja un alto nivel de [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 3,
-          texto:
-            'Ahorrar no es lo que sobra, sino lo que se [respuesta] guardar antes de gastar.',
-          respuesta: 'planifica',
-        },
-        {
-          id: 4,
-          texto:
-            'Un gasto innecesario que puede eliminarse sin afectar la calidad de vida básica se denomina gasto [respuesta].',
-          respuesta: 'discrecional',
-        },
-        {
-          id: 5,
-          texto:
-            'La cultura del ahorro promueve el uso responsable de los [respuesta] disponibles.',
-          respuesta: 'recursos',
-        },
-        {
-          id: 6,
-          texto:
-            'El estado de [respuesta] personales permite analizar la relación entre ingresos y egresos en un periodo determinado.',
-          respuesta: 'resultados',
-        },
-        {
-          id: 7,
-          texto:
-            'Cuando los ingresos son mayores que los egresos se generan una [respuesta] que puede destinarse al ahorro.',
-          respuesta: 'utilidad',
-        },
-        {
-          id: 8,
-          texto:
-            'Uno de los beneficios de ejecutar un presupuesto es la reducción del [respuesta] financiero.',
-          respuesta: 'estrés',
-        },
-        {
-          id: 9,
-          texto:
-            'Evitar gastos impulsivos y mantener límites presupuestales refleja [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 10,
-          texto:
-            'Contar con un fondo de [respuesta] permite enfrentar gastos inesperados sin afectar el presupuesto.',
-          respuesta: 'emergencia',
-        },
-      ],
     },
   }),
 }
