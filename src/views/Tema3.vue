@@ -50,7 +50,7 @@
           img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
           h3.bg02.py-2.w-card-text.text-white #[em Firewalls] y arquitecturas de filtrado
 
-    p Un #[em #[b firewall]] es un dispositivo o software que controla el tráfico de red mediante reglas de seguridad, permitiendo o bloqueando comunicaciones según criterios como dirección IP, puerto, protocolo, aplicación o usuario.
+    p Un #[em #[b firewall]] es un dispositivo o #[em software] que controla el tráfico de red mediante reglas de seguridad, permitiendo o bloqueando comunicaciones según criterios como dirección IP, puerto, protocolo, aplicación o usuario.
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
       .col-sm-12.col-lg-7
@@ -207,7 +207,7 @@
           h3.bg02.py-2.w-card-text.text-white  Redes privadas virtuales 
 
     p Una #[b #[em VPN (Virtual Private Network)]] crea una conexión segura a través de una red pública, permitiendo proteger la información mediante mecanismos de cifrado y autenticación.
-    h5.mb-0 Tipos de VPN:
+    h5.mb-0 Tipos de #[em VPN]:
     p.mb-0 #[b • #[em VPN]] sitio a sitio: conecta redes completas, como diferentes sedes de una organización. 
     p #[b • #[em VPN]] de acceso remoto: permite que usuarios individuales accedan de forma segura a recursos internos. 
 

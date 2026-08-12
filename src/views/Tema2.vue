@@ -20,7 +20,7 @@
                 p.text-white La infraestructura tecnológica reúne los recursos físicos y lógicos que permiten el funcionamiento de los sistemas de información.
                 p.mb-0.text-white • #[em Hardware:] servidores, computadores, dispositivos móviles, equipos de red y almacenamiento. 
                 p.text-white • #[em Software:] sistemas operativos, aplicaciones, bases de datos y herramientas de seguridad. 
-                p.text-white Según las necesidades de la organización, la infraestructura puede ser local, en la nube o híbrida. Su diseño debe considerar aspectos como disponibilidad, capacidad, escalabilidad y mantenimiento.
+                p.text-white Según las necesidades de la organización, la infraestructura puede #[b #[em ser local, en la nube o híbrida]]. Su diseño debe considerar aspectos como disponibilidad, capacidad, escalabilidad y mantenimiento.
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
       .col-sm-12.col-lg-7
@@ -62,7 +62,7 @@
             p • Inventariar activos. 
             p • Monitorear disponibilidad y rendimiento. 
             p • Analizar tráfico de red. 
-            p • Revisar registros de eventos (logs). 
+            p • Revisar registros de eventos (#[em logs]). 
             p • Verificar configuraciones. 
 
         p Su objetivo es identificar fallas, vulnerabilidades y actividades no autorizadas.
