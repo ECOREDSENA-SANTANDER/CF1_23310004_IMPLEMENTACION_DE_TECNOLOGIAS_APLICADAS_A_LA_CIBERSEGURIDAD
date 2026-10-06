@@ -38,7 +38,7 @@
       .col-lg-8
         p La seguridad debe implementarse mediante varias capas de protección que trabajen de forma complementaria, como:
         p.mb-0 • #[em Firewalls.]
-        p.mb-0 •  WAF #[em(firewall de aplicaciones web). ]
+        p.mb-0 •  WAF (#[em firewall] de aplicaciones web).
         p.mb-0 • Autenticación multifactor (MFA). 
         p.mb-0 • Configuración segura. 
         p.mb-0 • Monitoreo de eventos. 
