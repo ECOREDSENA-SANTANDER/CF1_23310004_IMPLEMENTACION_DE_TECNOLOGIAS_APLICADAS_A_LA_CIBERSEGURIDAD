@@ -20,7 +20,7 @@
                 p.text-white La infraestructura tecnológica reúne los recursos físicos y lógicos que permiten el funcionamiento de los sistemas de información.
                 p.mb-0.text-white • #[em Hardware:] servidores, computadores, dispositivos móviles, equipos de red y almacenamiento. 
                 p.text-white • #[em Software:] sistemas operativos, aplicaciones, bases de datos y herramientas de seguridad. 
-                p.text-white Según las necesidades de la organización, la infraestructura puede #[b #[em ser local, en la nube o híbrida]]. Su diseño debe considerar aspectos como disponibilidad, capacidad, escalabilidad y mantenimiento.
+                p.text-white Según las necesidades de la organización, la infraestructura puede #[b ser local, en la nube o híbrida]. Su diseño debe considerar aspectos como disponibilidad, capacidad, escalabilidad y mantenimiento.
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
       .col-sm-12.col-lg-7
@@ -36,8 +36,8 @@
       .col-lg-7
         p Para reducir estos riesgos se utiliza la #[b segmentación de redes], separando recursos según su función (administración, servidores, invitados, laboratorios, entre otros).
         p También es importante controlar las conexiones con terceros mediante herramientas como:
-        p.mb-0 #[em • VPN. ]
-        p.mb-0 #[em • Multi-Factor Authentication (MFA). ]
+        p.mb-0 • VPN.
+        p.mb-0 • Multi-Factor Authentication (MFA). 
         p.mb-0 • Control de acceso por roles. 
         p • Monitoreo de sesiones. 
         p El enfoque #[em zero trust] establece que ningún usuario o dispositivo debe considerarse confiable automáticamente.

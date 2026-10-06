@@ -59,7 +59,7 @@
         .col-sm-12.col-lg-7
           .d-flex.align-items-center
             img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
-            h3.bg02.py-2.w-card-text.text-white Identificación, inventario y clasificación de activos
+            h3.bg02.py-2.w-card-text.text-white Clasificación según su naturaleza
 
       .row.justify-content-center.align-items-stretch.mb-3(data-aos="zoom-in-left")
         .col-lg-8
@@ -320,7 +320,7 @@
         .col-sm-12.col-lg-7
           .d-flex.align-items-center
             img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
-            h3.bg02.py-2.w-card-text.text-white Modelado de amenazas aplicado a los activos
+            h3.bg02.py-2.w-card-text.text-white Preguntas clave del modelado de amenazas
 
       .fondo02.p-4.mb-4(data-aos="zoom-in-left")
         .row.justify-content-center.align-items-end.mb-5

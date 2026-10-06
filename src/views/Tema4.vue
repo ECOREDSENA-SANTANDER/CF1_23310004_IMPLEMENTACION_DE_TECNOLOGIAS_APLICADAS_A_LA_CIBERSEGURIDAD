@@ -11,14 +11,14 @@
         .col-lg-5.d-none.d-lg-block
           img.izq(src='@/assets/curso/temas/t4/img01.png', alt='')
         .col-lg-7
-          .p-3
+          .p-2
             .d-flex.align-items-start
               .row
                 .col-lg-3.mb-3
                   img(src='@/assets/curso/temas/t4/img02.png', alt='', style='width:70px;')
                 .col-lg-12
                 p.text-white El sistema operativo administra procesadores, memoria, dispositivos, usuarios, archivos y servicios. Una falla en su configuración puede invalidar otros controles. Un servidor protegido por #[em firewall] continúa siendo vulnerable cuando sus permisos permiten que cualquier usuario modifique archivos críticos.
-                p.text-white Los sistemas de archivos organizan la información en directorios, archivos y metadatos. Los permisos determinan quién puede leer, escribir o ejecutar. En sistemas Linux, los archivos poseen propietario, grupo y permisos. En Windows, las #[em ACL] permiten asignar permisos detallados a usuarios y grupos.
+                p.text-white Los sistemas de archivos organizan la información en directorios, archivos y metadatos. Los permisos determinan quién puede leer, escribir o ejecutar. En sistemas Linux, los archivos poseen propietario, grupo y permisos. En Windows, las ACL permiten asignar permisos detallados a usuarios y grupos.
                 p.text-white Los atributos pueden agregar restricciones, como impedir modificaciones, ocultar archivos o establecer auditoría. Su aplicación debe documentarse, porque configuraciones demasiado restrictivas pueden afectar aplicaciones y procesos de actualización.
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
@@ -34,7 +34,19 @@
         p Las cuentas predeterminadas deben revisarse. Las cuentas inactivas deben bloquearse o eliminarse de acuerdo con procedimientos. Las cuentas de servicio requieren contraseñas o llaves administradas y no deberían utilizarse para actividades interactivas.
       .col-lg-4.col-10.col-md-7
         img(src="@/assets/curso/temas/t4/img03.png")
+    .row.justify-content-start.mb-4(data-aos="zoom-in-left")
+      .col-sm-12.col-lg-7
+        .d-flex.align-items-center
+          img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
+          h3.bg02.py-2.w-card-text.text-white Principio de mínimo privilegio de funciones
 
+    .row.justify-content-center.align-items-center.mb-3
+      .col-lg-4.mb-3 
+        img(src="@/assets/curso/temas/t4/img13.png")
+      .col-lg-8
+        p El mínimo privilegio establece que una identidad debe recibir únicamente los permisos necesarios, durante el tiempo requerido. Este principio limita el impacto de errores y compromisos. Una cuenta utilizada para consultar informes no necesita modificar configuraciones del servidor. 
+        p La separación de funciones distribuye actividades críticas entre diferentes personas o roles. Quien solicita un acceso no siempre debería aprobarlo y asignarlo. En un sistema académico, un usuario podría registrar calificaciones, mientras otro aprueba modificaciones excepcionales.
+        p El acceso administrativo debe utilizar cuentas separadas de las actividades cotidianas. Navegar, consultar correo o descargar archivos desde una cuenta con privilegios elevados incrementa el riesgo.
     .fondo1(data-aos="zoom-in-left").mb-3
       .row.justify-content-center.align-items-center
         .col-lg-8.col-11
@@ -59,9 +71,19 @@
       .col-lg-4.mb-3.col-9.col-md-7
         img(src="@/assets/curso/temas/t4/img055.png")
       .col-lg-8
-        p Los modelos pueden orientarse a requisitos de gestión, controles, riesgos, madurez o capacidades. #[em ISO/IEC] 27001:2022 define requisitos para establecer, implementar, mantener y mejorar un sistema de gestión de seguridad de la información. #[em ISO/IEC] 27002:2022 proporciona orientación sobre controles. #[em ISO/IEC] 27005:2022 desarrolla la gestión del riesgo. 
-        p #[em NIST CSF] 2.0 organiza resultados de ciberseguridad y facilita la comunicación entre niveles técnicos y directivos. #[em NIST SP] 800-53 ofrece un catálogo de controles flexibles y adaptables. #[em CIS Controls] presenta prácticas priorizadas y prescriptivas. Estos marcos no necesariamente compiten. Una organización puede utilizar #[em ISO/IEC] 27001 como sistema de gestión, #[em NIST CSF] para estructurar resultados y #[em CIS Controls] para priorizar acciones.
+        p Los modelos pueden orientarse a requisitos de gestión, controles, riesgos, madurez o capacidades. ISO/IEC 27001:2022 define requisitos para establecer, implementar, mantener y mejorar un sistema de gestión de seguridad de la información. ISO/IEC 27002:2022 proporciona orientación sobre controles. ISO/IEC 27005:2022 desarrolla la gestión del riesgo. 
+        p NIST CSF 2.0 organiza resultados de ciberseguridad y facilita la comunicación entre niveles técnicos y directivos. NIST SP 800-53 ofrece un catálogo de controles flexibles y adaptables. CIS Controls presenta prácticas priorizadas y prescriptivas. Estos marcos no necesariamente compiten. Una organización puede utilizar ISO/IEC 27001 como sistema de gestión, NIST CSF para estructurar resultados y CIS Controls para priorizar acciones.
     p La selección metodológica debe considerar tamaño, sector, obligaciones, madurez y recursos. Una pequeña empresa puede comenzar con un inventario, configuraciones seguras, control de accesos, copias de seguridad y monitoreo. Una entidad compleja requerirá gobierno formal, evaluación de riesgos, auditorías, métricas y gestión de proveedores.
+    img(src='@/assets/curso/temas/t4/podcast.svg', alt='')
+    .row.justify-content-center.g-0(data-aos="fade-right").mb-4
+      .col-lg-12
+        .tarjeta.clr--pink.p-4.rounded-0.h-100.color-primario
+          .tarjeta.bg-white.p-4
+            TarjetaAudio.color-acento-botones.mb-0.p-3(
+            texto="Pódcast: Tipos de modelos y marcos de referencia"
+            :audio="require_src('@/assets/curso/temas/t4/podcast.svg')"
+        )
+            .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
       .col-sm-12.col-lg-7
@@ -73,7 +95,7 @@
       .col-lg-8.mb-3
         p La planeación define alcance, objetivos, activos, riesgos, responsables y recursos. En esta fase se caracteriza el contexto y se seleccionan metodologías.
         p La implementación pone en funcionamiento políticas, procedimientos y controles. Incluye adquisición, configuración, capacitación y documentación.
-        p La evaluación verifica si los controles existen, funcionan y alcanzan sus objetivos. #[em NIST SP] 800-53A plantea procedimientos para evaluar controles de seguridad y privacidad dentro de un marco de gestión de riesgos.
+        p La evaluación verifica si los controles existen, funcionan y alcanzan sus objetivos. NIST SP 800-53A plantea procedimientos para evaluar controles de seguridad y privacidad dentro de un marco de gestión de riesgos.
         p La mejora utiliza hallazgos, incidentes, cambios y métricas para ajustar el sistema. Una solución que generó demasiados falsos positivos puede requerir afinación. Una nueva modalidad de trabajo puede exigir autenticación reforzada.
       .col-lg-4.col-9.col-md-7
         img(src="@/assets/curso/temas/t4/img06.png")
@@ -129,7 +151,7 @@
                 img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
                 h3.bg02.py-2.w-card-text.text-white Herramientas de visibilidad y análisis de red
           p La visibilidad de red permite reconocer quién se comunica, con qué servicio, durante cuánto tiempo y con qué volumen. Los analizadores de protocolos muestran paquetes; los sistemas de flujo resumen comunicaciones; los monitores de disponibilidad verifican servicios; y los sistemas de gestión de eventos correlacionan registros. 
-          p Cada herramienta responde a preguntas diferentes. Una captura de paquetes aporta detalle, pero exige capacidad de interpretación. Un registro de flujo ofrece una visión resumida útil para tendencias. Un #[em SIEM] correlaciona múltiples fuentes, aunque requiere reglas, almacenamiento y personal.
+          p Cada herramienta responde a preguntas diferentes. Una captura de paquetes aporta detalle, pero exige capacidad de interpretación. Un registro de flujo ofrece una visión resumida útil para tendencias. Un SIEM correlaciona múltiples fuentes, aunque requiere reglas, almacenamiento y personal.
           p En formación virtual, un laboratorio puede utilizar herramientas para observar una conexión segura, analizar una resolución de nombres o comparar tráfico permitido y bloqueado. La experiencia debe realizarse en ambientes controlados y con autorización.
         .col-lg-3.col-8.col-md-6
           img(src="@/assets/curso/temas/t4/img09.png") 
@@ -144,7 +166,7 @@
       .col-lg-4.mb-3.col-9.col-md-7
         img(src="@/assets/curso/temas/t4/img10.png") 
       .col-lg-8
-        p Las herramientas perimetrales incluyen #[em firewalls, proxies, VPN, IDS/IPS, WAF] y sistemas de filtrado. Pueden presentarse como dispositivos físicos, máquinas virtuales, servicios administrados o funciones en la nube.
+        p Las herramientas perimetrales incluyen #[em firewalls, proxies], VPN, IDS/IPS, WAF y sistemas de filtrado. Pueden presentarse como dispositivos físicos, máquinas virtuales, servicios administrados o funciones en la nube.
         p La selección debe definir si se requiere una herramienta integrada o controles especializados. Una plataforma unificada simplifica administración, pero puede crear dependencia. Las herramientas especializadas ofrecen profundidad, aunque aumentan la complejidad de integración.
         p También debe evaluarse la calidad de los registros. Una herramienta que bloquea tráfico sin explicar la regla, el origen o la razón dificulta la investigación. Los registros deben enviarse a un repositorio protegido y sincronizarse mediante una fuente confiable de tiempo.
       

@@ -103,7 +103,7 @@ export default {
         'Elemento que almacena, procesa, transmite o soporta información valiosa para una organización, como bases de datos, aplicaciones, equipos, servicios, personas o conocimiento.',
     },
     {
-      termino: '<i>ACL</i>',
+      termino: 'ACL',
       significado:
         'Lista de control de acceso que establece reglas para permitir o denegar acciones sobre redes, archivos, aplicaciones u otros recursos.',
     },
@@ -258,7 +258,7 @@ export default {
         {
           nombre: 'Carlos Andrés Bonza Reyes',
           cargo: 'Experto temático TIC',
-          centro: 'Centro Agroturístico – Regional Santander',
+          centro: 'Centro Agroturístico - Regional Santander',
         },
         {
           nombre: 'Erika Fernanda Mejía Pinzón',
@@ -291,7 +291,7 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: '',
+          nombre: 'Yineth Ibette Gonzalez Quintero',
           cargo: 'Validadora y vinculadora de recursos educativos digitales',
           centro: 'Centro Agroturístico - Regional Santander',
         },

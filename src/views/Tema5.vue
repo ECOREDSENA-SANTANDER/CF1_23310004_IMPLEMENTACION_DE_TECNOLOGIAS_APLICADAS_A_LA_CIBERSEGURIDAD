@@ -12,14 +12,14 @@
     .row.justify-content-center.align-items-center.mb-5(data-aos='fade-right')
       .col-lg-8.mb-4
         AcordionA(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
-          .row(titulo="<i>DAC (Discretionary Access Control</i> – Control de acceso discrecional)")
+          .row(titulo="DAC<i> (Discretionary Access Control</i> – Control de acceso discrecional)")
             .col-lg-12.mb-4.mb-md-0
               p El propietario de un recurso asigna los permisos de acceso. Es común en sistemas de archivos donde el dueño decide quién puede leer, modificar o eliminar información. Su principal ventaja es la flexibilidad para compartir recursos; sin embargo, puede generar permisos inconsistentes si los usuarios otorgan accesos excesivos o sin criterios uniformes. Es adecuado cuando los propietarios comprenden sus responsabilidades y existen políticas, plantillas y revisiones periódicas.
-          .row(titulo="<i>MAC (Mandatory Access Control</i> – Control de acceso obligatorio)")
+          .row(titulo="MAC <i>(Mandatory Access Control</i> – Control de acceso obligatorio)")
             .col-lg-12.mb-4.mb-md-0
-              p Aplica reglas definidas por una autoridad central mediante etiquetas y niveles de seguridad. Los usuarios no pueden modificar libremente los permisos asignados. Se utiliza cuando la clasificación de la información y el control estricto son prioritarios. Reduce errores derivados de decisiones individuales, aunque requiere una administración rigurosa. Un ejemplo es #[em AppArmor], disponible en entornos Ubuntu, que restringe las acciones que pueden ejecutar los procesos y las aplicaciones.
+              p Aplica reglas definidas por una autoridad central mediante etiquetas y niveles de seguridad. Los usuarios no pueden modificar libremente los permisos asignados. Se utiliza cuando la clasificación de la información y el control estricto son prioritarios. Reduce errores derivados de decisiones individuales, aunque requiere una administración rigurosa. Un ejemplo es AppArmor, disponible en entornos Ubuntu, que restringe las acciones que pueden ejecutar los procesos y las aplicaciones.
           
-          .row(titulo="<i> RBAC (Role-Based Access Control</i> – Control de acceso basado en roles)")
+          .row(titulo="RBAC <i>(Role-Based Access Control</i> – Control de acceso basado en roles)")
             .col-lg-12.mb-4.mb-md-0
               p Asigna permisos a roles definidos según las funciones de la organización y posteriormente vincula usuarios con dichos roles. Facilita la administración de accesos y la separación de funciones, ya que los permisos no se asignan individualmente. Requiere revisiones periódicas para evitar acumulación de privilegios y una cantidad excesiva de roles (#[em role explosion]). Ejemplo: en un sistema académico, un instructor registra evaluaciones, un coordinador consulta reportes y un administrador gestiona configuraciones.
       .col-lg-4.col-7.col-md-6
@@ -46,27 +46,27 @@
             th.izqtext.bg5 Ejemplo
         tbody
           tr
-            td #[b #[em DAC]]
+            td #[b DAC]
             td Decisión del propietario.
             td Flexibilidad.
             td Permisos inconsistentes.
             td Carpeta compartida.
 
           tr
-            td #[b #[em MAC]]
+            td #[b MAC]
             td Etiquetas y política central.
             td Control estricto.
             td Mayor complejidad.
             td Restricción de procesos.
 
           tr
-            td #[b #[em RBAC]]
+            td #[b RBAC]
             td Función organizacional.
             td Administración escalable.
             td Acumulación de roles.
             td Sistema académico.
 
-    p Los modelos pueden combinarse. Un sistema puede utilizar #[em RBAC] para funciones, #[em DAC] para documentos y #[em MAC] para restringir procesos. La selección depende del recurso, el riesgo, el tamaño y la madurez.
+    p Los modelos pueden combinarse. Un sistema puede utilizar RBAC para funciones, DAC para documentos y MAC para restringir procesos. La selección depende del recurso, el riesgo, el tamaño y la madurez.
     p #[em NIST SP] 800-53 incluye familias de controles relacionadas con acceso, identificación, autenticación y auditoría, lo cual evidencia que el modelo debe integrarse con políticas y mecanismos de verificación.
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
@@ -112,7 +112,7 @@
                 h3.bg02.py-2.w-card-text.text-white Criptografía clásica y moderna
           p La criptografía clásica empleaba sustitución y transposición de caracteres. Su estudio permite comprender principios históricos, pero no proporciona seguridad suficiente para sistemas actuales.
           p La criptografía moderna se apoya en matemáticas, computación y análisis formal. Sus algoritmos se diseñan para resistir ataques conocidos bajo parámetros definidos. La seguridad no debería depender del secreto del algoritmo, sino de la protección de la llave.
-          P   La evolución también incluye la preparación frente a la computación cuántica. #[em NIST] publicó en 2024 los primeros estándares de criptografía poscuántica: #[em FIPS] 203 para encapsulación de llaves y #[em FIPS] 204 y 205 para firmas digitales. Esto no significa que todas las organizaciones deban sustituir inmediatamente sus mecanismos, pero sí que la selección debe considerar vida útil de la información, compatibilidad y planes de transición.
+          P   La evolución también incluye la preparación frente a la computación cuántica. #[em NIST] publicó en 2024 los primeros estándares de criptografía poscuántica: FIPS 203 para encapsulación de llaves y FIPS 204 y 205 para firmas digitales. Esto no significa que todas las organizaciones deban sustituir inmediatamente sus mecanismos, pero sí que la selección debe considerar vida útil de la información, compatibilidad y planes de transición.
 
         .col-lg-4.col-8.col-md-6
           img(src="@/assets/curso/temas/t5/img05.png") 
@@ -124,14 +124,27 @@
           img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
           h3.bg02.py-2.w-card-text.text-white Firma y certificados digitales
 
-    .row.justify-content-center.align-items-center.mb-4(data-aos='fade-right')
+    .row.justify-content-center.align-items-center.mb-3(data-aos='fade-right')
+      .col-lg-4.col-10.col-md-7.mb-3.p-0
+        img(src="@/assets/curso/temas/t5/mg09.png")
+      .col-lg-8
+        p La firma digital permite verificar la identidad del firmante y detectar modificaciones. Se genera mediante una llave privada y se verifica con la llave pública. No debe confundirse con una imagen de una firma manuscrita.
+        p Un certificado digital vincula una identidad con una llave pública. Una autoridad certificadora valida y firma el certificado. Los navegadores utilizan certificados para autenticar sitios y establecer conexiones seguras.
+        p En un portal institucional, el certificado evita que el usuario reciba advertencias y ayuda a proteger la comunicación. Su gestión incluye emisión, instalación, renovación, revocación y protección de la llave privada.
+    .row.justify-content-start.mb-4(data-aos="zoom-in-left")
+      .col-sm-12.col-lg-7
+        .d-flex.align-items-center
+          img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
+          h3.bg02.py-2.w-card-text.text-white Distribución y gestión de llaves
+
+    .row.justify-content-center.align-items-center.mb-3(data-aos='fade-right')
       .col-lg-8.mb-3
         p La gestión de llaves comprende generación, almacenamiento, distribución, uso, renovación, respaldo, revocación y destrucción. Una llave privada no debería enviarse por correo ni almacenarse en texto claro.
-        p Las organizaciones pueden utilizar módulos de seguridad, almacenes de llaves o servicios especializados. La selección depende de criticidad, volumen y regulación. Un sistema de alta sensibilidad puede requerir hardware dedicado; una aplicación pequeña podría utilizar un almacén seguro del sistema operativo.
+        p Las organizaciones pueden utilizar módulos de seguridad, almacenes de llaves o servicios especializados. La selección depende de criticidad, volumen y regulación. Un sistema de alta sensibilidad puede requerir #[em hardware] dedicado; una aplicación pequeña podría utilizar un almacén seguro del sistema operativo.
         p La pérdida de una llave puede impedir recuperar información. Su compromiso puede permitir descifrado o suplantación. Por ello, la continuidad y la seguridad deben equilibrarse.
-      .col-lg-4.col-10.col-md-7
-        img(src="@/assets/curso/temas/t5/img06.png")
-
+      .col-lg-4.col-10.col-md-7.p-0
+        img(src="@/assets/curso/temas/t5/img10.png")
+      
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
       .col-sm-12.col-lg-7
         .d-flex.align-items-center

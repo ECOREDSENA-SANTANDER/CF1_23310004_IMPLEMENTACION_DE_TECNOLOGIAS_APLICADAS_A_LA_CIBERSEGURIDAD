@@ -11,7 +11,7 @@
         .col-lg-5.d-none.d-lg-block
           img.izq(src='@/assets/curso/temas/t2/img01.png', alt='')
         .col-lg-7
-          .p-3
+          .p-2
             .d-flex.align-items-start
               .row
                 .col-lg-3.mb-3
@@ -30,7 +30,7 @@
       .col-sm-12.col-lg-7
         .d-flex.align-items-center
           img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
-          h3.bg02.py-2.w-card-text.text-white Interconexión de redes y dependencias tecnológicas
+          h3.bg02.py-2.w-card-text.text-white Defensa en profundidad
 
     .row.justify-content-center.align-items-center.mb-3(data-aos="zoom-in-left")
       .col-lg-4.mb-3.col-10.col-md-9
@@ -38,8 +38,8 @@
       .col-lg-8
         p La seguridad debe implementarse mediante varias capas de protección que trabajen de forma complementaria, como:
         p.mb-0 • #[em Firewalls.]
-        p.mb-0 • #[em WAF (firewall de aplicaciones web). ]
-        p.mb-0 • Autenticación multifactor (#[em MFA]). 
+        p.mb-0 •  WAF #[em(firewall de aplicaciones web). ]
+        p.mb-0 • Autenticación multifactor (MFA). 
         p.mb-0 • Configuración segura. 
         p.mb-0 • Monitoreo de eventos. 
         p.mb-0 • Copias de seguridad.
@@ -56,7 +56,7 @@
       .col-sm-12.col-lg-7
         .d-flex.align-items-center
           img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
-          h3.bg02.py-2.w-card-text.text-white Tipos de #[em Firewalls] 
+          h3.bg02.py-2.w-card-text.text-white Tipos de #[em firewalls] 
     
     .tarjeta--container.row.mb-4(data-aos="zoom-in-left")
       .col-md.tarjeta.bg05.text-white.p-5
@@ -81,7 +81,7 @@
             figure
               img(src='@/assets/curso/temas/t3/3.png', alt='')          
         h3.text-center #[em Next-Generation Firewall (NGFW) ]
-        p Incorpora funciones avanzadas como identificación de aplicaciones, prevención de intrusiones (#[em IPS]), filtrado web e inspección de tráfico cifrado.
+        p Incorpora funciones avanzadas como identificación de aplicaciones, prevención de intrusiones (IPS), filtrado web e inspección de tráfico cifrado.
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
       .col-sm-12.col-lg-7
         .d-flex.align-items-center
@@ -101,7 +101,7 @@
             img.izq(src='@/assets/curso/temas/t2/img04.svg', alt='')
           .col-lg-7
             .py-2
-            h4.bg03.p-2.text-white #[em Demilitarized Zone (DMZ)]
+            h4.bg03.p-2.text-white #[em Demilitarized Zone] (DMZ)
             p La #[b DMZ] es una zona de red donde se ubican servicios públicos, como servidores web o portales institucionales, para evitar accesos directos desde internet a la red interna.
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
@@ -135,28 +135,28 @@
           tr
             td #[b MikroTik]
             td #[em Router] y #[em firewall] integrado
-            td Enrutamiento, #[em VPN], filtrado, control de tráfico y administración de red.
+            td Enrutamiento, VPN, filtrado, control de tráfico y administración de red.
             td Buena relación costo-funcionalidad.
             td Pequeñas y medianas organizaciones.
 
           tr
             td #[b Cisco ASA]
-            td Appliance de seguridad perimetral
-            td #[em Firewall], #[em VPN], control de acceso y alta disponibilidad.
+            td #[em Appliance] de seguridad perimetral
+            td #[em Firewall], VPN, control de acceso y alta disponibilidad.
             td Integración con infraestructura Cisco.
             td Organizaciones con redes empresariales estructuradas.
 
           tr
             td #[b FortiGate]
             td #[em Firewall] de próxima generación
-            td Filtrado de aplicaciones, #[em IPS], #[em VPN], antivirus y control web.
+            td Filtrado de aplicaciones, IPS, VPN, antivirus y control web.
             td Integración de múltiples funciones de seguridad.
             td Empresas que requieren protección centralizada.
 
           tr
             td #[b pfSense]
             td #[em Firewall] y #[em router] de código abierto
-            td #[em Firewall], #[em VPN], balanceo, monitoreo y paquetes #[em IDS/IPS].
+            td #[em Firewall], VPN, balanceo, monitoreo y paquetes IDS/IPS.
             td Flexibilidad y bajo costo de implementación.
             td Laboratorios, pymes y entornos personalizados.
 
@@ -166,15 +166,15 @@
           img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
           h3.bg02.py-2.w-card-text.text-white #[em Proxy], filtrado de contenidos y listas de control de acceso
 
-    p Los #[em #[b proxys]], los sistemas de #[b filtrado de contenidos] y las listas de control de acceso son mecanismos utilizados para controlar y proteger el acceso a recursos y servicios.
+    p Los #[em #[b proxies]], los sistemas de #[b filtrado de contenidos] y las listas de control de acceso son mecanismos utilizados para controlar y proteger el acceso a recursos y servicios.
 
     AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
       .row.justify-content-center(titulo="<i>Proxy</i>")
         .col-lg-6.mb-4.mb-md-0
           p Un #[em proxy] actúa como intermediario entre usuarios y servicios.
-          p.mb-0 • #[b #[em proxy] directo:] representa a los usuarios cuando acceden a recursos externos, permitiendo aplicar políticas, registrar actividades y optimizar el tráfico. 
-          p.mb-0 • #[b #[em proxy] inverso:] protege los servidores internos, distribuye solicitudes y oculta la infraestructura de la organización. 
-          p • #[b #[em proxy] caché:] almacena temporalmente contenido para mejorar el rendimiento y reducir el consumo de ancho de banda.
+          p.mb-0 • #[b #[em Proxy] directo:] representa a los usuarios cuando acceden a recursos externos, permitiendo aplicar políticas, registrar actividades y optimizar el tráfico. 
+          p.mb-0 • #[b #[em Proxy] inverso:] protege los servidores internos, distribuye solicitudes y oculta la infraestructura de la organización. 
+          p • #[b #[em Proxy] caché:] almacena temporalmente contenido para mejorar el rendimiento y reducir el consumo de ancho de banda.
         .col-lg-5.col-md-8.col-9
           figure
             img(src='@/assets/curso/temas/t3/aco1.png', alt='')
@@ -188,9 +188,9 @@
           figure
             img(src='@/assets/curso/temas/t3/aco2.png', alt='')
 
-      .row.justify-content-center(titulo="<i>Access Control List (ACL)</i>")
+      .row.justify-content-center(titulo="<i>Access Control List</i> (ACL)")
         .col-lg-6.mb-4.mb-md-0
-          p Las #[em ACL] establecen qué usuarios o dispositivos pueden acceder a determinados recursos.
+          p Las ACL establecen qué usuarios o dispositivos pueden acceder a determinados recursos.
           p.mb-0 Se utilizan para:
           p.mb-0 • Permitir o bloquear tráfico de red.
           p.mb-0 • Controlar accesos a sistemas y archivos.
@@ -207,9 +207,9 @@
           h3.bg02.py-2.w-card-text.text-white  Redes privadas virtuales 
 
     p Una #[b #[em VPN (Virtual Private Network)]] crea una conexión segura a través de una red pública, permitiendo proteger la información mediante mecanismos de cifrado y autenticación.
-    h5.mb-0 Tipos de #[em VPN]:
-    p.mb-0 #[b • #[em VPN]] sitio a sitio: conecta redes completas, como diferentes sedes de una organización. 
-    p #[b • #[em VPN]] de acceso remoto: permite que usuarios individuales accedan de forma segura a recursos internos. 
+    h5.mb-0 Tipos de VPN:
+    p.mb-0 #[b • VPN] sitio a sitio: conecta redes completas, como diferentes sedes de una organización. 
+    p #[b • VPN] de acceso remoto: permite que usuarios individuales accedan de forma segura a recursos internos. 
 
     .row.justify-content-center.align-items-center.mb-3(data-aos="zoom-in-left")
       .col-lg-5.mb-3.col-11.col-md-10
@@ -221,7 +221,7 @@
         p.mb-0 • Compatibilidad con los sistemas existentes. 
         p • Rendimiento y facilidad de administración. 
 
-        p Una #[em VPN] mejora la seguridad de las comunicaciones, pero debe complementarse con autenticación multifactor #[em (MFA)], segmentación de red y controles de acceso para reducir riesgos.
+        p Una VPN mejora la seguridad de las comunicaciones, pero debe complementarse con autenticación multifactor (MFA), segmentación de red y controles de acceso para reducir riesgos.
 
     .row.justify-content-start.mb-4(data-aos="zoom-in-left")
       .col-sm-12.col-lg-7
@@ -236,8 +236,8 @@
           .col-lg-2.mb-2
             img.d-none.d-lg-block(src='@/assets/curso/temas/t3/img06.png', alt='')
           .col-lg-10
-            p Un #[em IDS] analiza eventos o tráfico y genera alertas ante comportamientos sospechosos. Un #[em IPS] puede bloquear o modificar la comunicación. Ambos pueden utilizar firmas conocidas, reglas, anomalías o análisis de comportamiento. La diferencia entre detectar y prevenir tiene consecuencias operativas. Un #[em IDS] proporciona visibilidad sin intervenir directamente, mientras que un #[em IPS] mal ajustado podría bloquear actividad legítima. Por ello, una implementación suele comenzar con observación y ajuste antes de activar bloqueo automático.
-        p La herramienta debe ubicarse donde pueda observar el tráfico relevante. También requiere actualizaciones, definición de activos protegidos y responsables de revisar las alertas. #[em pfSense], por ejemplo, puede incorporar #[em Snort] o #[em Suricata] para desempeñar funciones #[em IDS/IPS], pero el valor depende de la configuración y del ajuste al entorno.
+            p Un #IDS analiza eventos o tráfico y genera alertas ante comportamientos sospechosos. Un IPS puede bloquear o modificar la comunicación. Ambos pueden utilizar firmas conocidas, reglas, anomalías o análisis de comportamiento. La diferencia entre detectar y prevenir tiene consecuencias operativas. Un IDS proporciona visibilidad sin intervenir directamente, mientras que un IPS mal ajustado podría bloquear actividad legítima. Por ello, una implementación suele comenzar con observación y ajuste antes de activar bloqueo automático.
+        p La herramienta debe ubicarse donde pueda observar el tráfico relevante. También requiere actualizaciones, definición de activos protegidos y responsables de revisar las alertas. pfSense, por ejemplo, puede incorporar Snort o Suricata para desempeñar funciones IDS/IPS, pero el valor depende de la configuración y del ajuste al entorno.
 
        
 
