@@ -321,7 +321,7 @@
           .d-flex.align-items-center
             img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
             h3.bg02.py-2.w-card-text.text-white Preguntas clave del modelado de amenazas
-
+      p Para analizar un activo se pueden utilizar las siguientes preguntas:
       .fondo02.p-4.mb-4(data-aos="zoom-in-left")
         .row.justify-content-center.align-items-end.mb-5
           .col-lg-4.mb-0.d-flex.align-items-end.justify-content-center
