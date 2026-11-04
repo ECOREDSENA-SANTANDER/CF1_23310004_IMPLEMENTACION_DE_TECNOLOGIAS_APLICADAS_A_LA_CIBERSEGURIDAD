@@ -81,7 +81,7 @@
           .tarjeta.bg-white.p-4
             TarjetaAudio.color-acento-botones.mb-0.p-3(
             texto="Pódcast: Tipos de modelos y marcos de referencia"
-            :audio="require_src('@/assets/curso/temas/t4/podcast.svg')"
+            :audio="require_src('@/assets/curso/temas/t4/podcas.mp3')"
         )
             .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
 
