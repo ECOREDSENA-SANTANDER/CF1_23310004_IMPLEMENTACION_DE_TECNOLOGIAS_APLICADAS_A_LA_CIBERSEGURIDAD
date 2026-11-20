@@ -9,7 +9,12 @@
 
     p El control de acceso determina quién puede realizar qué acción sobre un recurso y bajo qué condiciones. Su funcionamiento combina identificación, autenticación, autorización y auditoría. La identificación presenta una identidad; la autenticación la verifica; la autorización concede permisos; y la auditoría registra acciones.
 
-    .row.justify-content-center.align-items-center.mb-5(data-aos='fade-right')
+    .row.justify-content-start.mb-4(data-aos="zoom-in-left")
+      .col-sm-12.col-lg-7
+        .d-flex.align-items-center
+          img.w-card-icon(src="@/assets/curso/temas/t2/escudo.svg")
+          h3.bg02.py-2.w-card-text.text-white Tipos de modelo de control de acceso
+    .row.justify-content-center.align-items-center.mb-0(data-aos='fade-right')
       .col-lg-8.mb-4
         AcordionA(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
           .row(titulo="DAC<i> (Discretionary Access Control</i> – Control de acceso discrecional)")
